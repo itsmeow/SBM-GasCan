@@ -1,6 +1,6 @@
 # Blender v2.79 (sub 0) OBJ File: 'gascan.obj'
 # www.blender.org
-mtllib gascan2.mtl
+mtllib gascan.mtl
 o group_1
 v -0.787400 5.511813 -1.181105
 v -2.755900 3.543306 1.181101
