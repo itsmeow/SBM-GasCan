@@ -39,7 +39,6 @@ public class GasCanModel implements IBakedModel {
 		ModelManager manager = Minecraft.getMinecraft().getRenderItem().getItemModelMesher().getModelManager();
 		ModelResourceLocation loc = transform == TransformType.GUI ? ClientProxy.mrlInventory : ClientProxy.mrl3D;
 		Matrix4f mat = baseModel.handlePerspective(transform).getRight();
-		mat.setScale(0.0625F);
 		return Pair.of(manager.getModel(loc), mat);
 	}
 
