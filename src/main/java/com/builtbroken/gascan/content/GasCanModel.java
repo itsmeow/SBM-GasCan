@@ -12,6 +12,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.BakedQuad;
 import net.minecraft.client.renderer.block.model.IBakedModel;
+import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
 import net.minecraft.client.renderer.block.model.ItemCameraTransforms.TransformType;
 import net.minecraft.client.renderer.block.model.ItemOverrideList;
 import net.minecraft.client.renderer.block.model.ModelManager;
@@ -57,6 +58,13 @@ public class GasCanModel implements IBakedModel {
 	@Override
 	public boolean isBuiltInRenderer() {
 		return false;
+	}
+
+	
+	
+	@Override
+	public ItemCameraTransforms getItemCameraTransforms() {
+		return ItemCameraTransforms.DEFAULT;
 	}
 
 	@Override
